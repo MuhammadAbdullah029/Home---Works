@@ -1,0 +1,320 @@
+@font-face {
+    font-family: freight;
+    src: url(./media/Freight_Big_Pro/Freight\ Big\ Pro\ Light\ Italic.woff2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: freight;
+    box-sizing: border-box;
+}
+html,body{
+    scroll-behavior: smooth;
+}
+
+/* main{
+    position: relative;
+} */
+
+.m1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.loader{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    z-index: 33;
+}
+.loader h1{
+    font-size: 6.8vw;
+    font-weight: 300;
+    line-height: 5vw;
+    position: relative;
+    top: -3.7%;
+    z-index: 9;
+    letter-spacing: -3px;
+}
+.yellow1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 8;
+    background-color: #F5E418;
+}
+.yellow2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 8;
+    background-color: #F5E418;
+}
+.loader video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 7;
+    position: absolute;
+}
+
+nav{
+    width: 100%;
+    padding: 2.5vw 4.1vw;
+    position: absolute;
+    top: 0;
+    z-index: 456;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left svg path{
+    fill: #111;
+}
+.ri{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+.ri h3{
+    cursor: pointer;
+    font-size: 1.1vw;
+    font-weight: 200;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.page1{
+    width: 100%;
+    height: 100vh;
+    background-color: #F5E418;
+}
+.page1 .page1-con{
+    height: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.page1 h1{
+    font-size: 6.8vw;
+    font-weight: 100;
+    line-height: 5vw;
+    letter-spacing: -3px;
+}
+.page1 .footer1{
+    display: flex;
+    padding: 0 3vw;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .4s ease;
+    position: absolute;
+    bottom: 3%;
+    width: 100%;
+}
+.footer1 h3{
+    font-size: 1.5vw;
+    text-transform: uppercase;
+}
+.footer1 svg {
+    cursor: pointer;
+}
+
+.page2{
+    width: 100%;
+    height: 101vh;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .2s ease-in-out;
+}
+.elem{
+    width: 100%;
+    position: relative;
+}
+.elem h2{
+    z-index: 3;
+    width: 100%;
+    font-size: 6vw;
+    font-weight: 100;
+    line-height: 5vw;
+    position: relative;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-style: normal;
+    transition: all .2s ease-in-out;
+    font-family:'Times New Roman', Times, serif;
+}
+.elem .moving .blur{
+        width: 35%;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background:linear-gradient(#f5e31be0, #F5E418, #f5e31be6);
+        box-shadow: 10px 0px 8px 1px #e4d42977, -10px 0px 10px 1px #f5e318a2;
+        z-index: 4;
+        border-radius: 3px;
+}
+.elem .moving{
+    top:50%;
+    width:100%;
+    padding: 4px 0;
+    position: absolute;
+    white-space: nowrap;
+    background-color: #F5E418;
+    transition: all .3s ease-in-out;
+    transform: translate(0, -50%) scaleY(0);
+    cursor: pointer;
+}
+.elem .moving .moving-in{
+    white-space: nowrap;
+    display: inline-block;
+    animation: move 7s infinite linear;
+    cursor: pointer;
+    
+}
+.elem .moving .moving-in h5{
+    color: black;
+    font-size: 17px;
+    margin-right: 35px;
+    display: inline-block;
+    transition: all .3s ease-in-out;
+    transition-delay: .2s;
+    opacity: 0;
+    text-transform: uppercase;
+}
+.elem:hover .moving{
+    transform: translate(0, -50%) scaleY(1);
+}
+
+.elem:hover .moving h5{
+    opacity: 1;
+}
+.elem:hover h2{
+    font-style: italic;
+    color: #111;
+}
+
+
+
+.page3{
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 9vw;
+    background-color: #f0e0e0;
+}
+.image-container{
+    padding: 1vw 3vw;
+    display: flex;
+    justify-content: space-between;
+}
+.image-div{
+    width: 30vw;
+    /* height: 38vw; */
+    overflow: hidden;
+    position: relative;
+    margin: 2vw .1vw;
+}
+.image-div img{
+    width: 100%;
+    height: 100%;
+    margin: .5vw;
+    object-fit: cover;
+    transition: all .3s ease;
+}
+.over-layer{
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: white;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+    background-color: #00000000;
+}
+.over-layer p{
+    opacity: 0;
+    font-size: 3.5vw;
+    line-height: 2.3vw;
+    transition: all .3s ease;
+    text-transform: uppercase;
+}
+.image-div:hover .over-layer{
+    background-color: #000;
+}
+.image-div:hover .over-layer p{
+    opacity: 1;
+}
+.image-div:hover img{
+    scale: 1.1;
+}
+
+.backtop{
+    width: 100%;
+    padding: 1vw;
+    text-align: center;
+    background-color: #f0e0e0;
+}
+.backtop svg{
+    cursor: pointer;
+}
+.backtop h3{
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.9vw;
+    text-decoration: none;
+}
+footer{
+    height: 13vw;
+}
+
+footer .foot{
+    font-size: 1.5vw;
+    display: flex;
+    padding: 3vw;
+    align-items: center;
+    background-color: black;
+    justify-content: space-between;
+}
+footer .foot a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: .5vw;
+    font-family: 'Times New Roman', Times, serif;
+}
+.foot .second{
+    display: flex;
+}
+
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}

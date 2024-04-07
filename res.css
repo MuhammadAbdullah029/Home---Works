@@ -1,0 +1,70 @@
+@media (max-width: 600px) {
+    .m1{
+        height: 85vh;
+        overflow: hidden;
+        z-index: 55;
+    }
+    nav .ri{
+        gap: 3vw;
+    }
+    nav .ri h3{
+        font-size: 4vw;
+    }
+    .loader{
+        height: 85vh;
+    }
+    .loader h1{
+        font-size: 11vw;
+        line-height: 10vw;
+    }
+    .yellow1{
+        height: 85vh;
+    }
+    .yellow2{
+        height: 85vh;
+    }
+    .page1{
+        height: 85vh;
+    }
+    .page1 h1{
+        font-size: 11vw;
+        line-height: 10vw;
+    }
+    .page1 .footer1{
+        bottom: 13vw;
+        width: 100%;
+    }
+    .page1 .footer1 h3{
+        font-size: 3.5vw;
+    }
+
+    .elem h2{
+        font-size: 15vw;
+        line-height: 14vw;
+        
+    }
+    .image-container{
+        flex-direction: column;
+    }
+    .image-div{
+        width: 100%;
+    }
+    .over-layer p{
+        font-size: 9vw;
+        line-height: 8vw;
+    }
+    .backtop h3{
+        font-size: 3vw;
+    }
+    footer .foot{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    footer .foot a{
+        font-size: 4vw;
+        margin: 3vw;
+    }
+    footer .foot .second{
+        flex-direction: column;
+    }
+}
